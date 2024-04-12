@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:padding="10dp"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:id="@+id/createLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/createLabel"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/search_view_bg"
+        android:padding="10dp"
+        android:hint="Full name"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:id="@+id/fullname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/createLabel"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/fullname"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/search_view_bg"
+        android:padding="10dp"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:id="@+id/createEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/fullname"/>
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/search_view_bg"
+        android:padding="10dp"
+        android:hint="Password"
+        android:id="@+id/createPassword"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/createEmail"/>
+
+    <ImageButton
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="0dp"
+        android:id="@+id/togglePasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_baseline_visibility_24"
+        android:contentDescription="Show password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintTop_toTopOf="@+id/createEmail"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/search_view_bg"
+        android:padding="10dp"
+        android:text="Create account"
+        android:id="@+id/createAccountBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/createPassword"/>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:scaleType="centerCrop"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Have an account?, Sign in"
+        android:id="@+id/signInLink"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="@+id/createAccountBtn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

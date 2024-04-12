@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:key="allergies"
+        app:title="Allergies"
+        app:summary="Modify my food allergy list, Update your food allergy list to manage dietary restrictions and accurately reflect health information."
+        android:icon="@drawable/ic_baseline_sick_24" />
+
+    <Preference
+        app:key="logout"
+        app:title="Logout"
+        app:summary="Signout from your account, Initiate logout to securely exit your session and protect sensitive information."
+        android:icon="@drawable/ic_baseline_logout_24" />
+</PreferenceScreen>
